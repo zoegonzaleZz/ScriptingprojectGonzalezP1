@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Whileloop : MonoBehaviour
+public class DoWhileLoop : MonoBehaviour
 {
-    int cupsInTheSink = 4;
     // Start is called before the first frame update
     void Start()
     {
-        while (cupsInTheSink > 0)
-        {
-            Debug.Log("I've washed a cup!");
+        bool shouldContinume = false;
 
-        }
+        do
+        {
+            print("Hello World");
+
+        } while (shouldContinue == true);
+
     }
 }
 
