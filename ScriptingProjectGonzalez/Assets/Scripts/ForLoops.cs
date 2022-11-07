@@ -8,7 +8,7 @@ public class ForLoops : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; < numEnemies; i++)
+        for (int i = 0; i < numEnemies; i++)
         {
             Debug.Log("Creating enemy number: " + i);
         }
@@ -17,9 +17,4 @@ public class ForLoops : MonoBehaviour
 
 }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
+    

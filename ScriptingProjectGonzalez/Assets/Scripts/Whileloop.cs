@@ -15,10 +15,3 @@ public class Whileloop : MonoBehaviour
         }
     }
 }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
