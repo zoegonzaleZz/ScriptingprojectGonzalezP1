@@ -2,24 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AwakeAndStart : MonoBehaviour
+public class EnableComponents : MonoBehaviour
 {
-    void Awake()
-    {
-        Debug.Log("Awake called.");
-    }
-
+    private Light mylight;
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Start called.");
+        mylight = GetComponent<Light>();
     }
-}
 
     // Update is called once per frame
     void Update()
     {
-        
+      if(Input.GetKeyUp(KeyCode.Space))
+      {
+            mylight.enabled = !mylight.enabled;
+
+      }
     }
 }
